@@ -1,0 +1,46 @@
+@use "../../abstracts/index" as *;
+.authorCard {
+  height: 400px;
+  position: relative;
+
+  @include respond(1200) {
+    height: 450px;
+  }
+  .name {
+    font-size: 20px;
+    @include respond(1050) {
+      font-size: 15px;
+    }
+  }
+  i {
+    color: $firstColor;
+  }
+  .addBook {
+    width: 90%;
+    @include position($b: 15px, $l: 50%);
+    transform: translateX(-50%);
+    background-color: rgba($color: $firstColor, $alpha: 0.5);
+    font-weight: bold;
+    border: 1px solid $textColor;
+  }
+  .BioBox {
+    border: 1px solid #009f98;
+    height: 130px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+
+    .headBio {
+      padding: 5px 10px;
+      width: 100%;
+      background-color: rgba($color: #009f98, $alpha: 0.9);
+      border-bottom: 1px solid #009f98;
+    }
+    .bodyBio {
+      white-space: wrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+   
+  }
+}

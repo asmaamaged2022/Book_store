@@ -1,0 +1,29 @@
+<?php
+class Database
+{ //! change dbname if you change it
+    private const DSN      = "mysql:host=fdb1029.awardspace.net;dbname=4791939_bookstore2022";
+    private const USERNAME = "4791939_bookstore2022";
+    private const PASSWORD = "Asmaamaged2122005*";
+/* 
+*private static ?PDO $connection = null;
+*may be null so that write it in this way 
+*/
+    private static ?PDO $connection = null;
+    public static function getConnection(): PDO
+    {
+        if (self::$connection === null) {
+
+            try {
+                self::$connection = new PDO(self::DSN, self::USERNAME, self::PASSWORD);
+                //* to throw error when it exist
+                self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                //* to make it return as associative array  direct  when i fetchAll
+                self::$connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            } catch (PDOException $e) {
+                die(" connection failed");
+            }
+        }
+        return self::$connection;
+    }
+
+}

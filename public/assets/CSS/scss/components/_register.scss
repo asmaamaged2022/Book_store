@@ -1,0 +1,13 @@
+@use "../abstracts/index" as *;
+
+    .registerContent{
+        min-height: 100%;
+         padding-top: 100px;
+        .registerForm{
+    background-color: #E9E4F1;
+    border: 1px solid $firstColor;
+    border-radius: 20px;
+    width: 340px;
+    box-shadow: 1px 5px 15px rgba(0,0,0,.6);
+    }
+}

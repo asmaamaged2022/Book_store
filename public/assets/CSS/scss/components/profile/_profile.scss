@@ -1,0 +1,55 @@
+@use "../../abstracts/index" as *;
+
+.profile {
+  padding-top: 130px;
+  img {
+    box-shadow: 0px 15px 25px -10px $firstColor;
+    border-radius: 50%;
+  }
+  .part1,
+  .part2 {
+    .text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+    }
+    > .item {
+      border: 2px solid $firstColor;
+    }
+
+    .head {
+      .image {
+        width: 100px;
+      }
+    }
+    #statistics-tab-pane i,
+    i.cartIcon {
+      cursor: pointer;
+      -webkit-text-stroke: 1px black;
+    }
+    i {
+      -webkit-text-fill-color: initial;
+    }
+  }
+
+  .part2 {
+    i {
+      cursor: initial;
+    }
+    .infoCard {
+      border: 2px solid $firstColor;
+    }
+    .table {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    #AddBookForm textarea {
+      height: 120px;
+    }
+  }
+  .addAuthor {
+    background-color: rgba($color: $firstColor, $alpha: 0.5);
+    font-weight: bold;
+    border: 1px solid $textColor;
+  }
+}

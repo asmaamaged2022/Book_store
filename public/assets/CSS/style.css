@@ -1,0 +1,305 @@
+body {
+  background: #d3cce3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e9e4f0, #d0c4ea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.mainBtn {
+  background-color: rgb(168, 130, 255);
+  color: black;
+  font-weight: bold;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition-duration: 0.5s;
+  border: 1px solid transparent;
+}
+.mainBtn:hover {
+  background-color: #d2bdff;
+  border: 1px solid #a882ff;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mainColor {
+  color: #543e88;
+}
+
+.mainBg {
+  background: linear-gradient(to right, #e9e4f0, #efe8ff, #e9e4f0);
+}
+
+.form-select:focus,
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(168, 130, 255, 0.25);
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+.IdentityButton {
+  background-color: rgba(168, 130, 255, 0.5);
+  font-weight: bold;
+  border: 1px solid #543e88;
+}
+.IdentityButton:hover {
+  background-color: rgba(168, 130, 255, 0.5);
+  font-weight: bold;
+  border: 1px solid #543e88;
+}
+
+.headerCarousel .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(168, 130, 255);
+  border-radius: 100%;
+}
+.headerCarousel .carousel-item .part1 > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition-duration: 1s;
+}
+.headerCarousel .carousel-item .part1 h4 {
+  transition-delay: 0.1s;
+}
+.headerCarousel .carousel-item .part1 h1 {
+  transition-delay: 0.2s;
+  color: rgb(168, 130, 255);
+  -webkit-text-stroke: 1px black;
+}
+.headerCarousel .carousel-item .part1 h6 {
+  transition-delay: 0.3s;
+}
+.headerCarousel .carousel-item .part1 button {
+  transition-delay: 0.4s;
+}
+.headerCarousel .carousel-item.active .part1 > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar {
+  width: 90%;
+  margin: 15px auto 0px;
+  z-index: 10;
+}
+.navbar .container {
+  background: linear-gradient(to right, #E9E4F0, #efe8ff, #E9E4F0);
+  border-radius: 50px;
+  border: 2px solid rgb(168, 130, 255);
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 1300px) {
+  .navbar .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+.navbar .container .navbar-brand .image {
+  width: 35%;
+}
+
+.loginForm {
+  background-color: #E9E4F1;
+  border: 1px solid rgb(168, 130, 255);
+  border-radius: 20px;
+  width: 340px;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.registerContent {
+  min-height: 100%;
+  padding-top: 100px;
+}
+.registerContent .registerForm {
+  background-color: #E9E4F1;
+  border: 1px solid rgb(168, 130, 255);
+  border-radius: 20px;
+  width: 340px;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.profile {
+  padding-top: 130px;
+}
+.profile img {
+  box-shadow: 0px 15px 25px -10px rgb(168, 130, 255);
+  border-radius: 50%;
+}
+.profile .part1 .text,
+.profile .part2 .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile .part1 > .item,
+.profile .part2 > .item {
+  border: 2px solid rgb(168, 130, 255);
+}
+.profile .part1 .head .image,
+.profile .part2 .head .image {
+  width: 100px;
+}
+.profile .part1 #statistics-tab-pane i,
+.profile .part1 i.cartIcon,
+.profile .part2 #statistics-tab-pane i,
+.profile .part2 i.cartIcon {
+  cursor: pointer;
+  -webkit-text-stroke: 1px black;
+}
+.profile .part1 i,
+.profile .part2 i {
+  -webkit-text-fill-color: initial;
+}
+.profile .part2 i {
+  cursor: initial;
+}
+.profile .part2 .infoCard {
+  border: 2px solid rgb(168, 130, 255);
+}
+.profile .part2 .table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.profile .part2 #AddBookForm textarea {
+  height: 120px;
+}
+.profile .addAuthor {
+  background-color: rgba(168, 130, 255, 0.5);
+  font-weight: bold;
+  border: 1px solid #543e88;
+}
+
+.adminCard {
+  height: 370px;
+}
+
+.authorCard {
+  height: 400px;
+  position: relative;
+}
+@media (min-width: 1181px) and (max-width: 1300px) {
+  .authorCard {
+    height: 450px;
+  }
+}
+.authorCard .name {
+  font-size: 20px;
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  .authorCard .name {
+    font-size: 15px;
+  }
+}
+.authorCard i {
+  color: rgb(168, 130, 255);
+}
+.authorCard .addBook {
+  width: 90%;
+  position: absolute;
+  top: initial;
+  left: 50%;
+  bottom: 15px;
+  right: initial;
+  transform: translateX(-50%);
+  background-color: rgba(168, 130, 255, 0.5);
+  font-weight: bold;
+  border: 1px solid #543e88;
+}
+.authorCard .BioBox {
+  border: 1px solid #009f98;
+  height: 130px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.authorCard .BioBox .headBio {
+  padding: 5px 10px;
+  width: 100%;
+  background-color: rgba(0, 159, 152, 0.9);
+  border-bottom: 1px solid #009f98;
+}
+.authorCard .BioBox .bodyBio {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart.customer .bookCard {
+  height: 600px;
+}
+
+.show.admin .bookCard {
+  height: 500px;
+}
+
+.bookCard {
+  height: 550px;
+}
+.bookCard .name {
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  .bookCard .name {
+    font-size: 15px;
+  }
+}
+.bookCard .boxData {
+  text-align: center;
+  border: 1px solid #009f98;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bookCard .boxData i {
+  color: white;
+}
+.bookCard .boxData .disc {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100px;
+}
+.bookCard .boxData .head {
+  text-align: center;
+  background-color: rgba(0, 159, 152, 0.9);
+  padding: 5px;
+}
+.bookCard .boxData .borderline {
+  border-right: 1px solid rgb(213, 212, 212);
+}
+
+.customerCard {
+  height: 320px;
+}
+.customerCard .banBtn {
+  position: absolute;
+  top: initial;
+  left: 50%;
+  bottom: 10px;
+  right: initial;
+  transform: translateX(-50%);
+  width: 90%;
+}
+.customerCard .name {
+  font-size: 20px;
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  .customerCard .name {
+    font-size: 15px;
+  }
+}
+
+.part1 {
+  max-width: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */

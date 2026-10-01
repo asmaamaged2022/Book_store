@@ -1,0 +1,26 @@
+@use "../abstracts/index" as *;
+
+.navbar {
+    width: 90%;
+    margin: 15px auto 0px;
+    z-index: 10;
+    .container{
+    //   background-color: #F4F2FF;
+     background: linear-gradient( to right, #E9E4F0, #efe8ff,#E9E4F0); 
+         border-radius: 50px;
+         border: 2px solid $firstColor;
+         box-shadow: 1px 5px 15px rgba(0,0,0,.8);
+         @include respond(350){
+            width: 90%;
+            margin: auto;
+         }
+        
+     .navbar-brand{
+        .image{
+            width: 35%;
+          
+        }
+    }
+    }
+   
+}

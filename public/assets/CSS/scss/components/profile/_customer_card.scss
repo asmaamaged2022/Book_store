@@ -1,0 +1,17 @@
+@use "../../abstracts/index" as *;
+
+.customerCard {
+  height: 320px;
+
+  .banBtn {
+    @include position($b: 10px, $l: 50%);
+    transform: translateX(-50%);
+    width: 90%;
+  }
+   .name {
+    font-size: 20px;
+    @include respond(1050) {
+      font-size: 15px;
+    }
+  }
+}

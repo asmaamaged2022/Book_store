@@ -1,0 +1,51 @@
+@use "../../abstracts/index" as *;
+
+.cart.customer {
+  .bookCard {
+    height: 600px;
+  }
+}
+.show.admin {
+  .bookCard {
+    height: 500px;
+  
+  }
+}
+
+.bookCard {
+  height: 550px;
+  .name {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include respond(1050) {
+      font-size: 15px;
+    }
+  }
+
+  .boxData {
+    text-align: center;
+    border: 1px solid #009f98;
+    border-radius: 10px;
+    overflow: hidden;
+    i {
+      color: white;
+    }
+    .disc {
+      white-space: wrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 100px;
+    }
+    .head {
+      text-align: center;
+
+      background-color: rgba($color: #009f98, $alpha: 0.9);
+      padding: 5px;
+    }
+    .borderline {
+      border-right: 1px solid rgb(213, 212, 212);
+    }
+  }
+}
