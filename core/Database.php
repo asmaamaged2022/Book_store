@@ -1,9 +1,9 @@
 <?php
 class Database
 { //! change dbname if you change it
-    private const DSN      = "mysql:host=fdb1029.awardspace.net;dbname=4791939_bookstore2022";
-    private const USERNAME = "4791939_bookstore2022";
-    private const PASSWORD = "Asmaamaged2122005*";
+    private const DSN      = "mysql:host=localhost;dbname=book_store";
+    private const USERNAME = "root";
+    private const PASSWORD = "";
 /* 
 *private static ?PDO $connection = null;
 *may be null so that write it in this way 
